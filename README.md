@@ -1,6 +1,6 @@
-# TheDailyWaterTracker!
-(https://user-images.githubusercontent.com/78456343/138619934-dcac3df0-2e02-49cf-80b4-15c5318795ab.jpeg)
-<img width="738" alt="Screen Shot 2021-10-23 at 8 31 49 PM" src="https://user-images.githubusercontent.com/78456343/138619942-4de1b975-7879-4b89-b389-e92af4c68bc0.png">
+# TheDailyWaterTracker!<img width="738" alt="Screen Shot 2021-10-23 at 8 31 49 PM" src="https://user-images.githubusercontent.com/78456343/138620166-0c05d6ab-be88-4ef1-8da5-7b52df49cdfc.png">
+
+
 ## How It Was Made:
 JavaScript, Node,Express, EJS, CSS, MongoDB
 ## What I Learned:
