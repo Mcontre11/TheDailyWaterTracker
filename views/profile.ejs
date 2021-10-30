@@ -5,7 +5,7 @@
   <title>Daily Water Intake</title>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile.css">
 </head>
 
 <body>
@@ -14,14 +14,14 @@
     <a href="/logout" class="btn btn-default btn-sm">Logout</a>
 
     <section>
-    <h1>Daily Water Intake</h1>
+    <h1>My Daily Water Tracker</h1>
 
       <form action="/profile" method="POST">
 
         
         <label for="time">Time:</label>
         <input type="time" id="timeOfDrink" name="time">
-        <p>Current Date is <input id='date' type='date' name ='date'>.</p>
+        <p> <strong>Current Date is </strong> <input id='date' type='date' name ='date'>.</p>
 
         <label for="AmoutOfWater">How much water did you drink? </label>
     
@@ -46,9 +46,9 @@
             </li>
           <% } %>
           </ul>
-
     </section>
 
+    <img class="img" src="img/waterDrink.gif" alt="description of gif" height="500px" width="490"/> 
 
 
     <script src="main.js"></script>

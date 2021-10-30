@@ -1,7 +1,20 @@
 body{
+  background-color: turquoise;
   padding-top:80px;
   word-wrap:break-word;
+  text-align: center;
 }
 img{
   height: 200px;
+}
+
+.input{
+  border-radius: 12px
+}
+.btn{
+  color: blueviolet;
+  background-color: white;
+  border-width: 5px;
+  border-color: turquoise;
+ 
 }

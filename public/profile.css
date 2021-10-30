@@ -1,0 +1,47 @@
+body{
+  background-color:rgb(254, 190, 190);
+}
+h1{
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 550px;
+      font-family: "Copperplate";
+      color: black;
+      text-shadow: 2px 2px 5px turquoise;
+      font-size: 45px;
+  }
+
+.messages{
+  border-style: inset;
+  border-color:rgb(8, 207, 214);
+  border-width: 4px;
+  height: 200px;
+  width: 400px;
+  font-size: 20px;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  
+}
+.img{
+  border: 1px solid black;
+  margin-top: -275px;
+  margin-bottom: 0px;
+  margin-right: 150px;
+  margin-left: 485px;
+  border-style: hidden;
+}
+.container{
+  margin-top: 50px;
+}
+button{
+  border-radius: 50%;
+  color: blueviolet;
+  background-color: turquoise;
+ 
+}
+.btn{
+  color: blueviolet;
+  border-width: 5px;
+  border-color: turquoise;
+  
+}

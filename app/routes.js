@@ -11,7 +11,8 @@ module.exports = function(app, passport, db) {
 
     // PROFILE SECTION =========================
     app.get('/profile', isLoggedIn, function(req, res) {
-        db.collection('waterApp').find({}).toArray((err, result) => {
+      console.log(req.user._id)
+        db.collection('waterApp').find({createdBy: req.user._id}).toArray((err, result) => {
           if (err) return console.log(err)
           console.log('profileWorking',result)
           res.render('profile.ejs', {
@@ -47,18 +48,18 @@ module.exports = function(app, passport, db) {
 
 // message board routes ===============================================================
 
-     app.post('/profile', (req, res) => {
-      db.collection('waterApp').save({date: req.body.date, time: req.body.time, amount: req.body.amount}, (err, result) => {
-        if (err) return console.log(err)
-         console.log('saved to database')
-        res.redirect('/profile')
-      })
-    })
+    //  app.post('/profile', (req, res) => {
+    //   db.collection('waterApp').save({date: req.body.date, time: req.body.time, amount: req.body.amount}, (err, result) => {
+    //     if (err) return console.log(err)
+    //      console.log('saved to database')
+    //     res.redirect('/profile')
+    //   })
+    // })
     app.post('/profile', (req, res) => {
-      db.collection('waterApp').insertOne({date: req.body.date, time: req.body.time, amount: req.body.amount}, (err, result) => {
+      db.collection('waterApp').insertOne({date: req.body.date, time: req.body.time, amount: req.body.amount, createdBy: req.user._id}, (err, result) => {
         if (err) return console.log(err)
-        console.log('saved to database')
-        res.redirect('/')
+        console.log('saved to databaseTWO')
+        res.redirect('/profile')
       })
     })
     app.delete('/delete', (req, res) => {
